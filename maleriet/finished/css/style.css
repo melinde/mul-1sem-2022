@@ -1,0 +1,39 @@
+html{
+  max-width:960px;
+  margin: auto;
+}
+
+h1{
+  font-size: 100px;
+  font-weight: bold;
+  color:khaki;
+  text-align:center;
+  background-image: url(../img/pattern.jpeg);
+}
+.farveblok h2{
+  font-size: 32px;
+  font-weight: bold;
+  color:white;
+  padding: 10px;
+}
+h3{
+  font-size: 16px;
+  font-weight: bold;
+}
+h1,h2,h3,p{
+  font-family: Helvetica, Arial, sans-serif;
+}
+#pensler{
+  background-color:mediumspringgreen;
+}
+#rammer{
+  background-color: lightcoral;
+}
+#maling{
+  background-color: skyblue;  
+}
+.pris{
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color:blue;
+}
