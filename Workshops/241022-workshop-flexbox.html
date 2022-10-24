@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Flexbox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: helvetica, arial, sans-serif;
+            color: #222;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 1050px;
+            margin: 0 auto;
+        }
+        /* alle elementer på niveauet umiddelbart under container */
+        .container>* {
+            margin: 1%;
+            box-sizing: border-box;
+        }
+        header {
+            width: 100%;
+            margin-top: 0 !important;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background-color: #eee;
+            border: 1px solid #ddd;
+            border-top: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+        .logo {
+            width: 18%;
+        }
+        .some {
+            font-size: 1.5rem;
+        }
+        .some i {
+            padding-left: 15px;
+        }
+        nav {
+            width: 17%;
+            display: flex;
+            flex-direction: column;
+            padding: 30px 15px;
+            font-size: 1.1rem;
+            color: royalblue;
+            background-color: #eee;
+            border: 1px solid #ddd;
+        }
+        a {
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: royalblue;
+        }
+        main {
+            width: 44%;
+            padding-top: 20px;
+        }
+        aside {
+            width: 33%;
+        }
+        footer {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: #eee;
+            border: 1px solid #ddd;
+        }
+        h1 {
+            padding-bottom: 15px;
+        }
+        p {
+            margin: 15px 0;
+            line-height: 140%;
+        }
+        .contact {
+            text-align: center;
+            padding-top: 15px;
+        }
+        img {
+            width: 100%;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">Hundelufteren.dk</div>
+            <div class="some">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram-square"></i>
+                <i class="fab fa-twitter-square"></i>
+            </div>
+        </header>
+        <nav>
+            <a href="#">Luftetider</a>
+            <a href="#">Priser</a>
+            <a href="#">Om os</a>
+            <a href="#">Kontakt</a>
+        </nav>
+        <main>
+            <h1>Vi lufter din hund med et smil</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, quam! Possimus inventore asperiores quo adipisci, eveniet laborum! Esse numquam facere laborum asperiores repudiandae, placeat voluptatem, soluta illum delectus culpa reiciendis id! Magni nulla hic doloribus eius, unde fugit iure.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, quam! Possimus inventore asperiores quo adipisci, eveniet laborum! Esse numquam facere laborum asperiores repudiandae, placeat voluptatem, soluta illum delectus culpa reiciendis id! Magni nulla hic doloribus eius, unde fugit iure.</p>
+            <div class="contact">
+                <p>Ring nu på</p>
+                <h2>12 34 56 78</h2>
+            </div>
+        </main>
+        <aside>
+            <img src="img/hundelufter.jpg">
+        </aside>
+        <footer>
+            <p>&copy; Hundelufteren 2022</p>
+        </footer>
+    </div>
+</body>
+</html>
