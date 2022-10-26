@@ -1,0 +1,102 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family:  Helvetica, Arial,sans-serif;
+}
+
+header{
+  background: #b4373f;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #b4373f;
+  height: 40px;
+  position: absolute;
+  /* bottom: 0; */
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 0.9em;
+}
+
+h1{
+  line-height: 115%;
+  margin: 25px 0 15px 0;
+}
+
+p{
+  line-height: 135%;
+}
+
+img{
+  width: 100%;
+}
+
+.text{
+  margin: 15px;
+}
+
+@media screen and (min-width: 800px) {
+  main{
+    display: flex;
+    flex-wrap: wrap
+  }
+  header{
+    order: -2;
+    width: 40%;
+    justify-content: flex-start;
+  }
+  nav{
+    order: -1;
+    position: relative;
+    width: 60%;
+    justify-content: flex-end;
+  }
+  a{
+    margin: 0 15px;
+  }
+
+  .bike-img{
+    width: 58%;
+
+  }
+  .text{
+    width: 38%;
+  }
+  .content{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+  }
+  h1{
+    font-size: 3em;
+    margin-bottom:30px;
+  }
+  p{
+    line-height: 145%;
+    font-size: 1.1em;
+    padding: 5px 0;
+  }
+
+}
+@media screen and (min-width: 1200px){
+  main{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
